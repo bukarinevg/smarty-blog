@@ -10,8 +10,8 @@ $dbConfig = [
 
 $smartyConfig = [
     'template_dir' => dirname(__DIR__) . '/templates',
-    'compile_dir' => dirname(__DIR__) . '/public/tmp/templates_c',
-    'cache_dir' => dirname(__DIR__) . '/public/tmp/cache',
+    'compile_dir' => dirname(__DIR__) . '/var/smarty/templates_c',
+    'cache_dir' => dirname(__DIR__) . '/var/smarty/cache',
 ];
 
 return [

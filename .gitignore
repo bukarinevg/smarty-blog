@@ -3,3 +3,5 @@
 /.phpdoc/
 .env
 /node_modules/
+/var/
+public
