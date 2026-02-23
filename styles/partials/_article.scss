@@ -1,0 +1,54 @@
+@use 'variables' as *;
+
+.article {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px 22px;
+  margin-bottom: 28px;
+  box-shadow: 0 8px 20px $shadow;
+
+  &__image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+    margin: 14px 0;
+  }
+
+  &__meta {
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  &__date {
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 0.2px;
+  }
+
+  &__lead {
+    font-size: 14px;
+  }
+
+  &__content {
+    line-height: 1.6;
+    font-size: 14px;
+  }
+}
+
+.related {
+  &__title {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .article {
+    &__image {
+      height: 220px;
+    }
+  }
+}
+

@@ -1,0 +1,27 @@
+{
+  "name": "evgbu/smarty-blog",
+  "description": "Simple blog on PHP + Smarty + MySQL",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.4",
+    "ext-pdo": "*",
+    "smarty/smarty": "^5.0",
+    "symfony/http-foundation": "^8.0"
+  },
+  "require-dev": {
+    "robmorgan/phinx": "^0.16"
+  },
+  "scripts": {
+    "migrate": "phinx migrate -c phinx.php",
+    "migrate:seed": "phinx seed:run -c phinx.php",
+    "migrate:status": "phinx status -c phinx.php",
+    "migrate:rollback": "phinx rollback -c phinx.php",
+    "migrate:fresh": "phinx rollback -c phinx.php -t 0 && phinx migrate -c phinx.php && phinx seed:run -c phinx.php"
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\": "src/"
+    }
+  }
+}

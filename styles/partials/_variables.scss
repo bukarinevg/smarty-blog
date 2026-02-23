@@ -1,0 +1,18 @@
+$bg: #f2f4f5;
+$white: #ffffff;
+$paper: $white;
+$ink: #1c2a33;
+$muted: #6b7c87;
+$accent: #334e5c;
+$border: #e2e7ea;
+$shadow: rgba(28, 42, 51, 0.08);
+
+:root {
+  --bg: #{$bg};
+  --paper: #{$paper};
+  --ink: #{$ink};
+  --muted: #{$muted};
+  --accent: #{$accent};
+  --border: #{$border};
+  --white: #{$white};
+}

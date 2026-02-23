@@ -1,0 +1,50 @@
+@use 'variables' as *;
+
+.header {
+  background: $accent;
+  color: var(--white);
+
+  &__container {
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  &__logo {
+    all: unset;
+    cursor: pointer;
+    display: inline-block;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+  }
+}
+
+.footer {
+  background: $accent;
+  color: var(--white);
+  margin-top: 40px;
+  padding: 18px 0;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  text-align: center;
+
+  &__text {
+    color: var(--white);
+  }
+}
+
+
+
+
+
+

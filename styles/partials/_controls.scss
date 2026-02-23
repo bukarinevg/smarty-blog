@@ -1,0 +1,60 @@
+@use 'variables' as *;
+
+.toolbar {
+  margin: 18px 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 12px;
+
+  &__label {
+    color: var(--muted);
+  }
+
+  &__link {
+    color: var(--ink);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 5px 10px;
+
+    &.active {
+      background: $accent;
+      border-color: $accent;
+      color: var(--white);
+    }
+  }
+}
+
+.pagination {
+  margin-top: 18px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  &__info {
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  &__link {
+    color: var(--ink);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 12px;
+
+    &.active {
+      background: $accent;
+      border-color: $accent;
+      color: var(--white);
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+/vendor/
+/public/
+/.idea/
+/.phpdoc/
+.env
+/node_modules/

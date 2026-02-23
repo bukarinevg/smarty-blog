@@ -1,0 +1,11 @@
+{
+  "name": "smarty-blog",
+  "private": true,
+  "devDependencies": {
+    "sass": "^1.77.8"
+  },
+  "scripts": {
+    "scss:build": "sass styles/style.scss public/styles.css --no-source-map",
+    "scss:watch": "sass --watch styles/style.scss:public/styles.css --no-source-map"
+  }
+}

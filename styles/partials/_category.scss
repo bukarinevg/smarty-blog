@@ -1,0 +1,53 @@
+@use 'variables' as *;
+
+.category {
+  margin-bottom: 34px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+
+    &__link {
+      display: flex;
+      width: 100%;
+      text-decoration: none;
+
+      &__info {
+        flex: 1;
+
+        &__title {
+          font-size: 12px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: $accent;
+          margin: 0;
+        }
+      }
+
+      &__view_all {
+        display: inline-block;
+        background: transparent;
+        color: $accent;
+        text-decoration: none;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        padding-bottom: 2px;
+        border-bottom: 3px solid $accent;
+        align-self: flex-start;
+      }
+    }
+  }
+
+  &__description {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 11px;
+  }
+}
+

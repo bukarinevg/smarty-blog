@@ -1,0 +1,22 @@
+@use 'variables' as *;
+
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.main {
+  padding-top: 26px;
+  flex: 1;
+}
+
+.page-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $accent;
+  margin-bottom: 12px;
+}
+
