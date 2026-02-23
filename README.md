@@ -1,10 +1,11 @@
 # Smarty Blog
 
-PHP 8.4+ · Smarty · MySQL · без фреймворков
+PHP 8.4+ · Smarty · MySQL
 
 ## Старт
 
 ```bash
+cp .env.example .env
 docker compose up --build -d
 docker compose exec php composer install
 docker compose exec php composer migrate
@@ -14,11 +15,12 @@ docker compose exec php npm run scss:build
 ```
 
 Открыть:
+
 - http://localhost:8080
 - http://localhost:8888 (phpMyAdmin)
 
 ## Роуты
 
-- `/`  
+- `/`
 - `/category/show/{id}`
 - `/article/show/{id}`
